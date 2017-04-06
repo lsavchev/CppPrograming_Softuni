@@ -1,0 +1,18 @@
+Manufacturer: Opel
+Model name: Kadet
+Owner: Ivan
+Owner age: 11
+Horse power: 120
+Registration number: AAAAAAA
+Manufacturer: Porshe
+Model name: Kaen
+Owner: Ivan
+Owner age: 11
+Horse power: 220
+Registration number: BBBBBBB
+Manufacturer: Porshe
+Model name: Kaen
+Owner: Lycho
+Owner age: 22
+Horse power: 320
+Registration number: BBBBBBB

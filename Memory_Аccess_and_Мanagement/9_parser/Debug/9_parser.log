@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (9_parser.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\9_parser\source.cpp(53): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\9_parser\source.cpp(63): warning C4018: '<': signed/unsigned mismatch
+  9_parser.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\8_parser.exe
+  9_parser.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\8_parser.pdb (Partial PDB)

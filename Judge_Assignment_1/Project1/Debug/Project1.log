@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\judge_assignment_1\project1\source.cpp(80): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\judge_assignment_1\project1\source.cpp(89): warning C4018: '<': signed/unsigned mismatch
+  Project1.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Judge_Assignment_1\Debug\Project1.exe
+  Project1.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Judge_Assignment_1\Debug\Project1.pdb (Partial PDB)

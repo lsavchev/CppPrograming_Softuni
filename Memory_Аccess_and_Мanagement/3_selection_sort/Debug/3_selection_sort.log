@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\3_selection_sort\source.cpp(16): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\3_selection_sort\source.cpp(20): warning C4018: '<': signed/unsigned mismatch
+  3_selection_sort.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\3_selection_sort.exe
+  3_selection_sort.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\3_selection_sort.pdb (Partial PDB)

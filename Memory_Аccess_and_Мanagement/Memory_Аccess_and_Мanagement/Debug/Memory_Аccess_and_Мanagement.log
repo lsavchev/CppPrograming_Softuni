@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\memory_аccess_and_мanagement\source.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\memory_аccess_and_мanagement\source.cpp(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\memory_аccess_and_мanagement\source.cpp(34): warning C4018: '<': signed/unsigned mismatch
+  Memory_Аccess_and_Мanagement.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\1_cmp_func.exe
+  Memory_Аccess_and_Мanagement.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\1_cmp_func.pdb (Partial PDB)

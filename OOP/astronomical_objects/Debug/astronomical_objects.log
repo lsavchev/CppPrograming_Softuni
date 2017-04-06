@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\121123\astronomical_objects\source.cpp(315): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\121123\astronomical_objects\source.cpp(41): warning C4715: 'ParseToType': not all control paths return a value
+c:\users\lacho\desktop\cpphomework\121123\astronomical_objects\source.cpp(283): warning C4715: 'ChangeObject': not all control paths return a value
+  astronomical_objects.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\astronomical_objects.exe
+  astronomical_objects.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\astronomical_objects.pdb (Partial PDB)

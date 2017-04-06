@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\121123\stringformatter\source.cpp(148): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\121123\stringformatter\source.cpp(162): warning C4018: '<': signed/unsigned mismatch
+  StringFormatter.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\StringFormatter.exe
+  StringFormatter.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\StringFormatter.pdb (Partial PDB)

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\121123\carclass\source.cpp(165): warning C4715: 'pPointer': not all control paths return a value
+  CarClass.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\CarClass.exe
+  CarClass.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\121123\Debug\CarClass.pdb (Partial PDB)

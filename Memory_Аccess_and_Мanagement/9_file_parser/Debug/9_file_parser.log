@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\9_file_parser\source.cpp(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\9_file_parser\source.cpp(80): warning C4018: '<': signed/unsigned mismatch
+  9_file_parser.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\9_file_parser.exe
+  9_file_parser.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\9_file_parser.pdb (Partial PDB)

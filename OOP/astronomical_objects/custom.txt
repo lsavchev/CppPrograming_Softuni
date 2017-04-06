@@ -1,0 +1,21 @@
+Cancri-2 PLANET (Steel_World) {mass: 5.972e+24, radius: 6.137e+06}
+Lycho-3 PLANET {mass: 5.972e+24, radius: 6.1371e+06}
+Neptun-5 PLANET {mass: 5.972e+24, radius: 6.1371e+06}
+Saturn-5 PLANET {mass: 5.972e+24, radius: 6.13701e+06}
+Mars-5 PLANET {mass: 5.972e+24, radius: 6.1371e+06}
+Earth-4 PLANET {mass: 5.972e+24, radius: 6.1371e+06}
+Mersurii-6 PLANET {mass: 5.972e+24, radius: 6.13701e+06}
+Sun-1 STAR (Steel World) {mass: 5.972e+24, radius: 6.137e+06}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+Luna-2 PLANET (luna) {mass: 12000, radius: 2000.21}
+lun-3 PLANET {mass: 123, radius: 1323}
+lun-3 PLANET (lych) {mass: 123, radius: 1323}

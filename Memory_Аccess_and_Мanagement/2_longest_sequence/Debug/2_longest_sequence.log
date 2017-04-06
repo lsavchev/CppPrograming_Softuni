@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\2_longest_sequence\source.cpp(21): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\2_longest_sequence\source.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\memory_аccess_and_мanagement\2_longest_sequence\source.cpp(68): warning C4018: '<=': signed/unsigned mismatch
+  2_longest_sequence.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\2_longest_sequence.exe
+  2_longest_sequence.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Memory_Аccess_and_Мanagement\Debug\2_longest_sequence.pdb (Partial PDB)

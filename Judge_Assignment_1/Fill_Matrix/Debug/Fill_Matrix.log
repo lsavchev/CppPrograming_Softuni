@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\lacho\desktop\cpphomework\judge_assignment_1\fill_matrix\source.cpp(33): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\judge_assignment_1\fill_matrix\source.cpp(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\lacho\desktop\cpphomework\judge_assignment_1\fill_matrix\source.cpp(51): warning C4553: '==': operator has no effect; did you intend '='?
+  Fill_Matrix.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Judge_Assignment_1\Debug\Fill_Matrix.exe
+  Fill_Matrix.vcxproj -> C:\Users\Lacho\Desktop\CppHomework\Judge_Assignment_1\Debug\Fill_Matrix.pdb (Partial PDB)
