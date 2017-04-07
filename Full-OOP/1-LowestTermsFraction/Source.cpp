@@ -34,14 +34,29 @@ public:
 	friend LowestTermsFraction operator*(const LowestTermsFraction &a, const LowestTermsFraction &b);
 	friend LowestTermsFraction operator*(const LowestTermsFraction &a, const int &b);
 
+	friend LowestTermsFraction operator/(const LowestTermsFraction &a, const LowestTermsFraction &b);
+	friend LowestTermsFraction operator/(const LowestTermsFraction &a, const int &b);
+
 	friend void operator*=(LowestTermsFraction &a, const LowestTermsFraction &b);
-
-	friend void operator/=(LowestTermsFraction &a, const int &b);
-
 	friend void operator*=(LowestTermsFraction &a, const int &b);
-
+	
+	friend void operator/=(LowestTermsFraction &a, const LowestTermsFraction &b);
+	friend void operator/=(LowestTermsFraction &a, const int &b);
+	
 	friend LowestTermsFraction operator+(const LowestTermsFraction &a, const LowestTermsFraction &b);
+
+	LowestTermsFraction getReciprocal();
 };
+
+LowestTermsFraction operator/(const LowestTermsFraction &a, const LowestTermsFraction &b)
+{
+	return LowestTermsFraction(a.nominator * b.denominator, a.denominator * b.nominator);
+}
+
+LowestTermsFraction operator/(const LowestTermsFraction &a, const int &b)
+{
+	return LowestTermsFraction(a.nominator * 1, a.denominator * b);
+}
 
 LowestTermsFraction operator*(const LowestTermsFraction &a, const LowestTermsFraction &b)
 {
@@ -50,16 +65,21 @@ LowestTermsFraction operator*(const LowestTermsFraction &a, const LowestTermsFra
 
 LowestTermsFraction operator*(const LowestTermsFraction &a, const int &b)
 {
-	return LowestTermsFraction(a.nominator * b, a.denominator * b);
+	return LowestTermsFraction(a.nominator * b, a.denominator * 1 );
+}
+
+void operator/=(LowestTermsFraction &a, const LowestTermsFraction &b)
+{
+	a.nominator *= b.denominator;
+	a.denominator *= b.nominator;
+	LowestTermsFraction tempA(a.nominator, a.denominator);
+	a = tempA;
 }
 
 void operator*=(LowestTermsFraction &a, const LowestTermsFraction &b)
 {
-	int lcm = leastCommonMultiple(a.denominator, b.denominator);
-
-	a.nominator = a.nominator * (lcm / a.denominator) + b.nominator * (lcm / b.denominator);
-	a.denominator = lcm;
-
+	a.nominator *= b.nominator;
+	a.denominator *= b.denominator;
 }
 
 void operator*=(LowestTermsFraction &a, const int &b)
@@ -69,10 +89,11 @@ void operator*=(LowestTermsFraction &a, const int &b)
 
 void operator/=(LowestTermsFraction &a, const int &b)
 {
-	a.nominator = (a.nominator * 1);
-	a.denominator = (a.denominator * b);
+	a.nominator *= 1;
+	a.denominator *= b;
+	LowestTermsFraction tempA(a.nominator, a.denominator);
+	a = tempA;
 }
-
 
 LowestTermsFraction operator+(const LowestTermsFraction &a, const LowestTermsFraction &b) {
 	int lcm = leastCommonMultiple(a.denominator, b.denominator);
@@ -106,29 +127,38 @@ std::istream& operator>>(std::istream& stream, LowestTermsFraction &fraction) {
 	return stream;
 }
 
+LowestTermsFraction LowestTermsFraction::getReciprocal()
+{
+	LowestTermsFraction temp;
+	temp.nominator = this->denominator;
+	temp.denominator = this->nominator;
+
+	return temp;
+}
+
 int main() {
-	LowestTermsFraction a(20,5);//, b;
+	LowestTermsFraction a, b;
 
-	std::cin >> a;// >> b;
+	std::cin >> a >> b;
 
-	a *= 4;
+	a *= 3;
 
-	a /= 4;
+	a /= 3;
 
-	//a *= b;
+	a *= b;
 
-	//a /= b;
+	a /= b;
 
 	LowestTermsFraction multBy3 = a * 3;
 
-	//LowestTermsFraction multByB = a * b;
+	LowestTermsFraction multByB = a * b;
 
-	//LowestTermsFraction divBy3 = a / 3;
+	LowestTermsFraction divBy3 = a / 3;
 
-	//LowestTermsFraction divByB = a / b;
+	LowestTermsFraction divByB = a / b;
 
-	//LowestTermsFraction reciprocalA = a.getReciprocal();
+	LowestTermsFraction reciprocalA = a.getReciprocal();
 
-	std::cout << a; //  <<b << multBy3 << multByB; //<< divBy3 << divByB;
+	std::cout << a << std::endl << b<< std::endl << multBy3 << std::endl << multByB << std::endl << divBy3 << std::endl << divByB << std::endl;
 	return 0;
 }
