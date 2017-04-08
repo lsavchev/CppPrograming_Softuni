@@ -15,7 +15,5 @@ public:
 	SqrtGenerator& operator=(const SqrtGenerator& old);
 	~SqrtGenerator();
 
-	std::string Getname(int index);
-	double GetValue(int index);
 };
 

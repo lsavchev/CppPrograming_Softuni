@@ -1,7 +1,7 @@
 #pragma once
 #include "SequenceGenerator.h"
 
-class FibonacciGenerator: 
+class FibonacciGenerator :
 	public SequenceGenerator
 {
 private:
@@ -12,12 +12,12 @@ public: //ctor
 	FibonacciGenerator();
 	FibonacciGenerator(int startFibonacciNumber, int endFibonacciNumber);
 	FibonacciGenerator(const FibonacciGenerator& old); //copy ctor
-	~FibonacciGenerator();	
+	~FibonacciGenerator();
 
 public: // function
 
-	std::string Getname(int index);
-	double GetValue(int index);
+		//std::string Getname(int index);
+		//double GetValue(int index) const;
 
 	FibonacciGenerator& operator=(const FibonacciGenerator& old);
 

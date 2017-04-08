@@ -1,0 +1,5 @@
+Names: Fibonacchi 3 Fibonacchi 4 Fibonacchi 5 Values: 2.000000 3.000000 5.000000 
+Names: Fibonacchi 3 Fibonacchi 4 Fibonacchi 5 Values: 2 3 5 
+Names: Fibonacchi 3 Fibonacchi 4 Fibonacchi 5 Values: 2 3 5 
+Names: Fibonacchi 3 Fibonacchi 4 Fibonacchi 5 Values: 2 3 5 
+Names: Fibonacchi 3 Fibonacchi 4 Fibonacchi 5 Values: 2 3 5 

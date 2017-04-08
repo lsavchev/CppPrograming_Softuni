@@ -4,83 +4,64 @@ FibonacciGenerator::FibonacciGenerator()
 {
 }
 
-FibonacciGenerator::FibonacciGenerator(const FibonacciGenerator& old) :
-	startFibonacciNumber(old.startFibonacciNumber),
-	endFibonacciNumber(old.endFibonacciNumber)
-{
-	this->memory = new double[old.endFibonacciNumber - startFibonacciNumber];
-	this->name = old.name;
-	for (size_t i = 0; i <(old.endFibonacciNumber - startFibonacciNumber); i++)
-	{
-		this->memory[i] = old.memory[i];
-	}
-}
-
 FibonacciGenerator::FibonacciGenerator(int startFibonacciNumber, int	endFibonacciNumber) :
 	startFibonacciNumber(startFibonacciNumber),
 	endFibonacciNumber(endFibonacciNumber)
 {
-	name = "Fibonacci ";
-	this->memory = new double[endFibonacciNumber - startFibonacciNumber];
+	this->size_of_generator = endFibonacciNumber - startFibonacciNumber;
+	this->name = new std::string[this->size_of_generator];
+	this->values = new double[this->size_of_generator];
 	generateSequence();
 }
 
-std::string FibonacciGenerator::Getname(int index)
+FibonacciGenerator::FibonacciGenerator(const FibonacciGenerator& old) :
+	startFibonacciNumber(old.startFibonacciNumber),
+	endFibonacciNumber(old.endFibonacciNumber)
 {
-	try
-	{
-		if(index < this->endFibonacciNumber - this->startFibonacciNumber)
-		{
-			int a = 0;
-			a = this->memory[index];
-			return this->name.replace(10, 1, std::to_string(a));
+	this->size_of_generator = old.size_of_generator;
+	this->values = new double[old.size_of_generator];
+	this->name = new std::string[old.size_of_generator];
 
-		}else
-		{
-			return std::string();
-		}
-	}
-	catch (std::exception ex)
+	for (size_t i = 0; i <old.size_of_generator; i++)
 	{
-		return std::string();
+		this->values[i] = old.values[i];
+		this->name[i] = old.name[i];
 	}
 }
 
-double FibonacciGenerator::GetValue(int index)
+FibonacciGenerator::~FibonacciGenerator()
 {
-	if (index < this->endFibonacciNumber - this->startFibonacciNumber)
-	{
-		return this->memory[index];
-	}
-	else
-	{
-		return -1;
-	}
+	delete[] this->values;
+	delete[] this->name;
 }
+
 
 FibonacciGenerator & FibonacciGenerator::operator=(const FibonacciGenerator & old)
 {
 	if (this != &old)
 	{
-		delete[] this->memory;
+		delete[] this->values;
+		delete[] this->name;
 
-		this->memory = new double[old.endFibonacciNumber - startFibonacciNumber];
+		this->values = new double[old.size_of_generator];
+		this->name = new std::string[old.size_of_generator];
 
-		for (size_t i = 0; i <(old.endFibonacciNumber - startFibonacciNumber); i++)
+		for (size_t i = 0; i < old.size_of_generator; i++)
 		{
-			this->memory[i] = old.memory[i];
+			this->values[i] = old.values[i];
+			this->name[i] = old.name[i];
 		}
 
+		this->size_of_generator = old.size_of_generator;
 		this->startFibonacciNumber = old.startFibonacciNumber;
 		this->endFibonacciNumber = old.endFibonacciNumber;
-		this->name = old.name;
 	}
 	return *this;
 }
 
 void FibonacciGenerator::generateSequence()
 {
-	
+
 	int first = 0;
 	int second = 1;
 	int next = 0;
@@ -98,15 +79,46 @@ void FibonacciGenerator::generateSequence()
 
 		if (c >= this->startFibonacciNumber)
 		{
-			memory[count_fibonachi_index] = next;
+			this->values[count_fibonachi_index] = next;
+			this->name[count_fibonachi_index] = "Fibonacchi " + std::to_string(c);
 			count_fibonachi_index++;
 		}
-		
+
 	}
 
 }
 
-FibonacciGenerator::~FibonacciGenerator()
-{
-	delete[] this->memory;
-}
+
+//std::string FibonacciGenerator::Getname(int index)
+//{
+//	try
+//	{
+//		if(index < this->size_of_generator)
+//		{
+//			int a = 0;
+//			a = this->memory[index];
+//			return this->name.replace(10, 1, std::to_string(a));
+//
+//		}else
+//		{
+//			return std::string();
+//		}
+//	}
+//	catch (std::exception ex)
+//	{
+//		return std::string();
+//	}
+//}
+
+//double FibonacciGenerator::GetValue(int index) const
+//{
+//	if (index < this->size_of_generator)
+//	{
+//		return this->values[index];
+//	}
+//	else
+//	{
+//		return -1;
+//	}
+//}
+
