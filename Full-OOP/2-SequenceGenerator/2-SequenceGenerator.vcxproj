@@ -113,7 +113,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FibonacciGenerator.cpp" />
+    <ClCompile Include="SequenceGenerator.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SqrtGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FibonacciGenerator.h" />
+    <ClInclude Include="SequenceGenerator.h" />
+    <ClInclude Include="SqrtGenerator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
