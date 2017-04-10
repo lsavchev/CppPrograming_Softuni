@@ -5,15 +5,6 @@ Bishop::Bishop(char symbol, Color color, Position pos) :
 {
 }
 
-Figure * Bishop::getAvailableMoves(const Figure * otherFigures)
-{
-	return nullptr;
-}
-
-bool Bishop::move(Position & newPosition, Position * otherFigures)
-{
-	return false;
-}
 
 Bishop::~Bishop()
 {

@@ -10,12 +10,3 @@ Queen::~Queen()
 {
 }
 
-Figure * Queen::getAvailableMoves(const Figure * otherFigures)
-{
-	return nullptr;
-}
-
-bool Queen::move(Position & newPosition, Position * otherFigures)
-{
-	return false;
-}

@@ -1,10 +1,43 @@
-﻿  Bishop.cpp
-c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(19): warning C4552: '-': operator has no effect; expected operator with side-effect
+﻿  Rook.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  Queen.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  Pawn.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  Knight.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  King.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  Figure.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
+  Bishop.cpp
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2039: 'string': is not a member of 'std'
+  c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C3646: 'get': unknown override specifier
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2059: syntax error: '('
+c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(33): error C2238: unexpected token(s) preceding ';'
   Generating Code...
-  Compiling...
-  Source.cpp
-c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\figure.h(19): warning C4552: '-': operator has no effect; expected operator with side-effect
-c:\users\lacho\documents\github\cppprograming_softuni\full-oop\4-chessfigure\source.cpp(11): warning C4101: 'blackFigures': unreferenced local variable
-  Generating Code...
-  4-ChessFigure.vcxproj -> C:\Users\Lacho\Documents\GitHub\CppPrograming_Softuni\Full-OOP\Debug\4-ChessFigure.exe
-  4-ChessFigure.vcxproj -> C:\Users\Lacho\Documents\GitHub\CppPrograming_Softuni\Full-OOP\Debug\4-ChessFigure.pdb (Partial PDB)

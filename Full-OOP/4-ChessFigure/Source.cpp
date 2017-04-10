@@ -4,7 +4,13 @@
 #include "Queen.h"
 int main()
 {
+	Figure ** bit;
 	
-	Figure * blackFigures;
+	//bit[0] = new Bishop('b', WHITE, Position(1, 1));
+	//bit[1] = new Bishop('b', WHITE, Position(1, 1));
+	Bishop b('b', WHITE, Position(1, 1));
+	Position p;
+	std::vector<Position> pos;
+	//pos = b.getAvailableMoves(bit);
 	return 0;
 }
