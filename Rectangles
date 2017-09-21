@@ -1,0 +1,150 @@
+#include<iostream>
+#include <stdlib.h> //abs
+class Point
+{
+private:
+	double x;
+	double y;
+public:
+
+	Point() : x(0), y(0) {}
+	Point(double x_, double y_) :x(x_), y(y_){}
+
+	void setX(double x) { this->x = x; }
+	void setY(double y) { this->x = x; }
+
+	double getX() const { return this->x; }
+	double getY() const { return this->y; }
+
+	friend std::istream& operator>>(std::istream& stream, Point& v) {
+		stream >> v.x >> v.y;
+		return stream;
+	}
+};
+
+class Rectangle
+{
+private:
+	Point first_point;
+	Point second_point;
+	double side_a;
+	double side_b;
+public:
+
+	Rectangle() :
+		first_point(),
+		second_point()
+	{
+		this->side_a = 0;
+		this->side_b = 0;
+	}
+
+	Rectangle(Point p1, Point p2) :
+		first_point(p1),
+		second_point(p2)
+	{
+		this->side_a = abs(first_point.getX() - second_point.getX());
+		this->side_b = abs(first_point.getY() - second_point.getY());
+	}
+
+	Point get_first_point() const
+	{ 
+		return this->first_point;
+	}
+
+	Point get_second_point() const
+	{
+		return this->second_point;
+	}
+
+	void set_first_point(const Point& p)
+	{
+		this->first_point = p;
+	}
+
+	void set_second_point(const Point& p)
+	{
+		this->second_point = p;
+	}
+
+	double rectangle_area () const
+	{
+		return this->side_a * this->side_b;
+	}
+
+	static void swap(Rectangle * &xp, Rectangle * &yp)
+	{
+		Rectangle temp = *xp;
+		*xp = *yp;
+		*yp = temp;
+	}
+
+	static void SortArrayOfRectangles(Rectangle** &rec, const int size)
+	{
+		int i, j, min_idx;
+
+		// One by one move boundary of unsorted subarray
+		for (i = 0; i < size - 1; i++)
+		{
+			// Find the minimum element in unsorted array
+			min_idx = i;
+			for (j = i + 1; j < size; j++)
+				if (rec[j]->rectangle_area() < rec[min_idx]->rectangle_area())
+					min_idx = j;
+
+			// Swap the found minimum element with the first element
+			swap(rec[min_idx], rec[i]);
+		}
+	}
+	static void PrintArrayOfRectangles(Rectangle** &rec, const int size)
+	{
+		for (size_t i = 0; i < size; i++)
+		{
+			std::cout << rec[i]->rectangle_area() << std::endl;
+
+		}
+	}
+};
+
+int main()
+{
+	int array_size = 0;
+
+	std::cout << "Enter size of rectangle array" << std::endl;
+	std::cin >> array_size;
+	Rectangle ** rectangle_container = new Rectangle*[array_size];
+	std::cout << "Enter points of each rectangle " << std::endl;
+	
+	for (size_t i = 0; i < array_size; i++)
+	{
+		std::cout << "Rectangle " << (i + 1) << std::endl;
+		Point input_first_point;
+		Point input_second_point;
+		std::cout << "(x1, y1)" << std::endl;
+		std::cin >> input_first_point;
+		std::cout << "(x2, y2)" << std::endl;
+		std::cin >> input_second_point;
+		rectangle_container[i] = new Rectangle(input_first_point, input_second_point);
+	}
+	
+	//Print unsorted array by area 
+	Rectangle::PrintArrayOfRectangles(rectangle_container, array_size);
+
+	//Sort array
+	Rectangle::SortArrayOfRectangles(rectangle_container, array_size);
+
+	//Print sorted array by area
+	Rectangle::PrintArrayOfRectangles(rectangle_container, array_size);
+	
+
+
+	//Free memory
+	for (size_t i = 0; i < array_size; i++)
+	{
+		delete[] rectangle_container[i];
+	}
+
+	delete[] rectangle_container;
+
+	return 0;
+}
