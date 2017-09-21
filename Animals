@@ -1,0 +1,75 @@
+#include <iostream>
+#include <string>
+#include <sstream>      // std::stringstream
+
+//Всяко животно се описва с име, вид, тегло и възраст
+
+class Animal
+{
+private:
+	// Тук слагаш нещата които описват всяко животно.
+	
+	std::string _name;		//име
+	std::string _type;		//вид
+	double _weight;		    //тегло
+	int _age;		  		//възраст
+public:
+	//тук слагаш конструктор за животно
+	Animal(std::string name, std::string type, double weight, int age) :
+		// инициализарай си обекта с входните данни. 
+	{
+		
+	}
+
+	//Това е само декларация на фунциите, трябва да ги инициализараш !!!
+	std::string get_name() const;
+	std::string get_type() const;
+	double get_weight() const;
+	int get_age() const;
+
+	std::stringstream info()
+	{
+		//тук слагаш принт информация за животното
+	}
+};
+
+int main()
+{
+	// Правиш си вектор с животни. 
+
+
+	//Тък слагаш информацията за всички животни
+
+
+	//Тък слагаш информация за животните които са под 2 години и имат тегло над 10 килограма.
+
+
+	//Тук слагаш информацията за животните с максималното и минималното тегло
+
+
+	//Тук слагаш информация за средното тегло на лъвовете. 
+
+
+	//Поздравления  !!!
+	return 0;
+}
+
+std::string Animal::get_name() const
+{
+	return std::string();
+}
+
+std::string Animal::get_type() const
+{
+	return std::string();
+}
+
+double Animal::get_weight() const
+{
+	return 0.0;
+}
+
+int Animal::get_age() const
+{
+	return 0;
+}
